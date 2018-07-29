@@ -1,0 +1,99 @@
+/* Typewrite CSS Animation 
+===================================================*/
+
+.typewriter {
+font-family: monospace; /* Web-safe typewriter-like font */
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+text-overflow: clip;
+border-right: .15em solid orange; /* The typwriter cursor */
+white-space: nowrap; /* Keeps the content on a single line */
+margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+max-width: 400px;
+letter-spacing: .15em; /* Adjust as needed */
+animation: 
+    typing 5s steps(30, end),
+    blinking-cursor .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: #30A64A; }
+}
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 4rem 2rem 1rem;
+    }
+}
+
+/* Custom Styles 
+===================================================*/
+/* Global Styles */
+
+h1, h2, h3, h4, h5, h6, p, a {
+font-family: 'Roboto Mono', monospace;
+}
+
+h1, h2 {
+    color: #30A64A;
+}
+
+.jumbotron {
+    background-color: #000000;
+}
+
+li {
+    list-style: none;
+}
+.jumbo-header {
+    margin-top: 2.5%;
+}
+
+.btn {
+    margin: 24px 8px;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+.section-header {
+    padding-bottom: 30px;
+}
+
+/* Project Description Section */
+
+.collaborators>a {
+    color: #0078B2; /* LinkedIn Brand Color */ 
+}
+
+/* App Feature Section */
+.app-feature {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 16px;
+}
+
+/* Demo Section */
+.video {
+    width: 100%;
+    margin: 0 auto;
+}
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* App Extension Section */
+
+.development-logo {
+    width: 100%;
+}
